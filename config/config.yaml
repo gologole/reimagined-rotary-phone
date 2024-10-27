@@ -1,0 +1,34 @@
+postgres:
+  host: localhost
+  port: 5432
+  database: mydb
+  user: myuser
+  password: mypassword
+
+redis:
+  address: localhost:6379
+  password: mypassword
+  db: 0
+
+http_server:
+  port: 8080
+  elk_domain: "http://elk.example.com"
+  courier_service: "http://localhost:"
+  order_service: "http://localhost:"
+
+grpc_server:
+  port: 50051
+
+courier_scores:
+  auto: 1
+  bike: 2
+  foot: 3
+  price_per_km:
+    auto: 10
+    bike: 5
+    foot: 3
+
+distance_thresholds:
+  near: 5
+  medium: 10
+  far: 100
